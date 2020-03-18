@@ -6,15 +6,116 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet"  href="style.css">
   <link rel="stylesheet"  href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/css/imagehover.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Unna&display=swap" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
 </head>
+<style>
+ .carousel-item img{
+  width:100%;
+  height:350px;
+ }
+ .for-carousel img{
+  height:700px; 
+  width:100%;
+ }
+
+@media (min-width: 360px) and (max-width:500px){
+  .for-carousel img{
+  height:450px; 
+  width:100%;
+ }
+}
+
+
+
+.b3 {
+  position: relative;
+  width: 50%;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+.b3:hover .image {
+  opacity:.1;
+}
+
+.b3:hover .middle {
+  opacity: 1;
+}
+
+.b4 {
+ 
+  padding: 16px 32px;
+}
+
+
+</style>
+
 <body>
 	<div class="box">
-	<img src="img/banner1.jpg" class="img-fluid">
+   <div id="demo4" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo4" data-slide-to="0" class="active"></li>
+    <li data-target="#demo4" data-slide-to="1"></li>
+    <li data-target="#demo4" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item for-carousel active">
+      <img src="img/banner1.jpg" alt="Los Angeles" class="for-carousel">
+    </div>
+    <div class="carousel-item for-carousel">
+      <img src="img/banner1.jpg" alt="Chicago" class="for-carousel">
+    </div>
+    <div class="carousel-item for-carousel">
+      <img src="img/banner1.jpg" alt="New York" class="for-carousel">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+ 
+  <a class="carousel-control-prev" href="#demo4" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo4" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+
+
 	</div>
+<div class="for-icon">
+  <a href=""><i class="fa fa-facebook"></i><br></a>
+  <a href="https://api.whatsapp.com/send?phone=919582156488&text=&source=&data="><i class="fa fa-whatsapp"></i><br></a></a>
+  <a href=""><i class="fa fa-instagram"></i><br></a>
+  <a href=""><i class="fa fa-youtube"></i><br></a>
+</div>
+
   <div class="box2">
 
 <div class="container">
@@ -26,7 +127,7 @@
 
   <!-- Toggler/collapsibe Button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
+    <span class="navbar-toggler-icon bg-light"></span>
   </button>
 
   <!-- Navbar links -->
@@ -48,7 +149,7 @@
         <a class="nav-link text-light ml-3" href="#reviews">REVIEWS</a>
       </li>
       <li class="nav-item">
-        <button type="button" class="btn4 text-light ml-4">TALK <BR>TO US</button>
+        <button type="button" class="btn4 text-light ml-4" data-toggle="modal" data-target="#myModal">TALK <BR>TO US</button>
       </li>
     </ul>
   </div>
@@ -57,12 +158,19 @@
 </div>
 </div>
 </div>
-          
-          <div class="box3">
-            <P>ENJOY YOUR</P>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 col-md-6">
+      <div class="for-head">
+         <P>ENJOY YOUR</P>
             <h2>WEDDING</h2>
             <p class="for-p">LEAVE THE DANCE TO US</p>
-          </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
 
 <section id="section">
   <div id="about">
@@ -71,11 +179,15 @@
     <div class="col-lg-6">
       <div class="box4">
       <h1>More Than 5 years <br>of Experience</h1>
-      <p style="color:grey">Wedding Naach adds luxury to your event we make you groove elegantly and is a top notch solution  </p>
-      <div class="span11"></div>
+      <p style="color:white">Wedding Naach adds luxury to your event we make you groove elegantly and is a top notch solution  </p>
+      
       <div class="span2">
-        <p>Led and run by Sana Sharif, make sure the  having more than 5 years of experience. We are specialised in wedding choreography and we make sure to give you the best result. make sure the 
-We choreograph according to you and make sure the steps you are doing in a perfect way.</p>
+        <h5 style="text-align:center;">Dance with Elegance</h5>
+        <p> we conceptualize , give you a story base , add themesto make performances unique.<br>
+         RED CARPET ENTRY for Bride and Groom to make your event more grand.<br>
+         Background Dancers will add more charm in your performances to make you feel like a King and Queen.<br>        
+         Mixing and editing of music to add special effects.<br>
+         Celebrity Management</p>
       </div>
     </div>
     </div>
@@ -84,8 +196,10 @@ We choreograph according to you and make sure the steps you are doing in a perfe
         <div class="b2">
           <img src="img/img3.jpg" class="img-thumbnail" alt="Cinque Terre">
           <div class="b3">
-            <img src="img/img4.jpg" class="img-thumbnail" alt="Cinque Terre">
-          </div>
+          <img src="img/img2.jpg" alt="Avatar" class="image img-thumbnail"  style="width:100%">
+          
+        </div>
+          
         </div>
       </div>
       </div>
@@ -103,12 +217,12 @@ We choreograph according to you and make sure the steps you are doing in a perfe
 </div>
 <div class="col-lg-6">
   <div class="box8">
-  <button type="button" class="btn1">+91 9999999999</button>
+  <button type="button" class="btn1">+91 9582156488</button>
 </div>
 </div>
 <div class="col-lg-6">
   <div class="box9">
-<button type="button" class="btn2">Message</button>
+<button type="button" class="btn2" data-toggle="modal" data-target="#myModal">Message</button>
 </div>
 </div>
 
@@ -116,7 +230,6 @@ We choreograph according to you and make sure the steps you are doing in a perfe
 </div>
 
 </section>  
-
 
 <section id="section">
   <div id="packages">
@@ -132,17 +245,40 @@ We choreograph according to you and make sure the steps you are doing in a perfe
       <div class="col-lg-4">
         <h5>Ring Ceremony</h5>
         <div class="b5"></div>
-        <p>In publishing and graphic design, Lorem ipsum is thete re a placeholder text commonly used to demonstrate the visual </p>
+        <div class="for-pera">
+        <p>Your first dance shuold be unique and special. Most importantly it should be you we make those moment special for you with speical choreography </p>
       </div>
-      <div class="col-lg-4">
+      </div>
+      <div class="col-lg-4 ">
         <h5>Mehendi Night</h5>
         <div class="b5"></div>
-        <p>In publishing and graphic design, Lorem ipsum is thete re a placeholder text commonly used to demonstrate the visual</p>
+        <p>Mehendi day is a special day for bride and now a day's it's celebrated in a more fun way with choregharphed dance with latest Mehendi design and colorfull function venu.</p>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-4 ">
         <h5>Reception</h5>
         <div class="b5"></div>
-        <p>In publishing and graphic design, Lorem ipsum is thete re a placeholder text commonly used to demonstrate the visual</p>
+        <p>After the wedding party of the newlyweds, the just-married couple shares their first dance. A Choreographed Dance Routine remains one of the most expected moments of the reception.</p>
+      </div>
+      <div class="col-lg-4 ">
+        <h5>Destination Wedding</h5>
+        <div class="b5"></div>
+        <p>Destiontion wedding are friending now a day form Udaypur to Goa People are going to celebrate there wedding day's </p>
+      </div>
+      <div class="col-lg-4 ">
+        <h5>Bday's And Anniversaries</h5>
+        <div class="b5"></div>
+        <p>We help you cheroghrph the best and sutable dance's for your speical day </p>
+      </div>
+      
+      <div class="col-lg-4 ">
+        <h5>Corporate Events</h5>
+        <div class="b5"></div>
+        <p>Dance choreogh is one of the best way to get away form all your work load and pressure Contact us to more about it.</p>
+      </div>
+      <div class="col-lg-4 ">
+        <h5>Sangeet Function</h5>
+        <div class="b5"></div>
+        <p>"In era of sangeet dance night please we my gazal". your 'sangeet the Raat' shuold be celebration of dance and music we help you to make it more fun</p>
       </div>
 
 
@@ -167,8 +303,8 @@ We choreograph according to you and make sure the steps you are doing in a perfe
       </div>
     </div>
   </div>
+  </div>
 </section>
-
 
 <section id="section">
 
@@ -176,54 +312,156 @@ We choreograph according to you and make sure the steps you are doing in a perfe
 
     <div class="row">
       <div class="col-lg-6 black-section">
-        <div class="for-cont mt-4">
-        <img src="img/img3.jpg" class="img-fluid">
-        
-      </div>
-      </div>
-    <div class="col-lg-6 black-section">
-      <div class="dance-section text-center">
-        <h3>Group Dance</h3>
-        <span>Rock The Floor</span>
-        <p class="for-pera">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio iure consequatur temporibus reprehenderit similique rerum accusamus, quos ullam quaerat soluta quia ab quisquam non neque quibusdam ducimus corrupti molestias quae.ab quisquam non neque quibusdam ducimus corrupti molestias quae.</p>
-      <a href="#" class="btn mybtn">View Rate</a>
-      </div></div>
+      <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/img1.jpg" alt="Los Angeles" width="1100" height="500">
     </div>
-
- <div class="row mt-4">
-   <div class="col-lg-6">
-<div class="first-section-img for-cont">
-  <img src="img/img1.jpg" class="img-fluid img-thumbnail ">
-  <div class="dance-section text-center">
-    <h4>Dance Battle</h4>
-    <span>Ladka v/s Ladki wale</span>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio iure consequatur temporibus reprehenderit similique rerum accusamus, quos ullam quaerat soluta quia ab quisquam non neque quibusdam ducimus corrupti molestias quae.</p>
-  </div>
-</div>
-
-</div>
-
-
-<div class="col-lg-6">
-  <div class="first-section-img for-cont">
-    <img src="img/img2.jpg" class="img-fluid img-thumbnail ">
-    <div class="dance-section text-center">
-      <h4>Family Dance</h4>
-      <span>Every on the floor please</span>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio iure consequatur temporibus reprehenderit similique rerum accusamus, quos ullam quaerat soluta quia ab quisquam non neque quibusdam ducimus corrupti molestias quae.</p>
+    <div class="carousel-item">
+      <img src="img/img2.jpg" alt="Chicago" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="img/img3.jpg" alt="New York" width="1100" height="500">
     </div>
   </div>
   
-  </div>
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+      </div>
+    <div class="col-lg-6 black-section">
+      <div class="dance-section text-center">
+        <h3>Bride Groom Entry</h3>
+        <span>Red Carpet Entry</span>
+        <p class="">Bride and Gloom entry is a among the most awaited spectacles of the day. All the big indian wedding are following this trand. We give you Red Carpet Entry diffrent theme </p>
+      <a href="#" class="btn mybtn">View Rate</a>
+      </div></div>
+   
+
+ 
 
 </div>
-<div class="row mt-3 pb-5">
-  <div class="col-lg-12 text-center"><a href="#" class="btn mybtn2">View More Servies</a>
-  </div>
-</div>
-</div>
+ </div>
 
 </section>
+
+ 
+ <section id="section">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 black-section">
+      <div id="demo2" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo2" data-slide-to="0" class="active"></li>
+    <li data-target="#demo2" data-slide-to="1"></li>
+    <li data-target="#demo2" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/img2.jpg" alt="Los Angeles" width="1100" height="500" class="img-thumbnail">
+    </div>
+    <div class="carousel-item">
+      <img src="img/img1.jpg" alt="Chicago" width="1100" height="500" class="img-thumbnail">
+    </div>
+    <div class="carousel-item">
+      <img src="img/img3.jpg" alt="New York" width="1100" height="500" class="img-thumbnail">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+ 
+  <a class="carousel-control-prev" href="#demo2" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo2" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+      </div>
+      <div class="col-lg-6 black-section">
+      <div id="demo3" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo3" data-slide-to="0" class="active"></li>
+    <li data-target="#demo3" data-slide-to="1"></li>
+    <li data-target="#demo3" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div id="carousel-example" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner ">
+    <div class="carousel-item active">
+      <img src="img/img3.jpg" alt="Los Angeles" width="1100" height="500" class="img-thumbnail">
+    </div>
+    <div class="carousel-item">
+      <img src="img/img2.jpg" alt="Chicago" width="1100" height="500" class="img-thumbnail">
+    </div>
+    <div class="carousel-item">
+      <img src="img/img1.jpg" alt="New York" width="1100" height="500" class="img-thumbnail">
+    </div>
+  </div>
+  </div>
+
+  <a class="carousel-control-prev" href="#demo3" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo3" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+      </div>
+     
+
+  <div class="col-lg-6 col-md-12">
+      <div class="dance-section text-center">
+      <h4>Dance Battle</h4>
+      <span>Ladka v/s Ladki wale</span>
+      <p>During our  Dance Battle team building activity, your team will work with a professional dance teacher to learn an expertly choreographed street dance routine, which your team will then perform against the clock while using your decision-making and creative skills to add your own interpretation and creative flare.</p>
+    </div>
+    
+  </div>
+ <div class="col-lg-6 col-md-12">
+      <div class="dance-section text-center">
+      <h4>Family Dance</h4>
+      <span>Every on the floor please</span>
+      <p>We make your family and loved ones to come together and dedicatedly practicing , have fun , and look astonishing on the stage while dancing.
+This is one of the most entertained performance by audience And gives feeling of togethernes.</p>
+    </div>
+    
+  </div>
+
+  <div class="col-lg-12 col-md-6 text-center mx-auto"><a href="#packages" class="btn mybtn2">View More Servies</a>
+  </div>
+
+    </div>
+  </div>
+
+   </section>
+   
+
+ 
+
+
+
 
 <div class="testimonials text-center pt-4">
   <div id="reviews">
@@ -287,7 +525,11 @@ We choreograph according to you and make sure the steps you are doing in a perfe
 <div class="footer-title">
   <h4>Don't Be Shy Talk To Us</h4>
   <div class="span1 mb-2"></div><Br>
-<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, iste saepe eius, natus veritatis accusamus ipsum reiciendis doloribus ipsam temporibus voluptatibus tenetur ullam perferendis cum fuga atque? Harum, deleniti commodi.</span><br><br>
+<span>we conceptualize , give you a story base , add the mesto make performances unique.<br>
+RED CARPET ENTRY for Bride and Groom to make your event more grand.
+Background Dancers will add more charm in your performances to make you feel like a King and Queen.<br>
+Mixing and editing of music to add special effects.
+Celebrity Management.</span><br><br>
 </div>
 
 <a href="#" class="btn mybtn3" data-toggle="modal" data-target="#myModal">Contact Us</a> </div>
@@ -301,12 +543,14 @@ We choreograph according to you and make sure the steps you are doing in a perfe
       <div class="foooter-icon">
         <a href=""><i class="fa fa-facebook-square" id="f1"></i></a>
         <a href=""><i class="fa fa-instagram" id="f2"></i> </a>
-        <a href=""><i class="fa fa-whatsapp" id="f3"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=91https://api.whatsapp.com/send?phone=919891537260&text=&source=&data=&text=&source=&data="><i class="fa fa-whatsapp" id="f3"></i></a>
+         <a href=""><i class="fa fa-youtube" id="f2"></i> </a>
       </div>
       <div class="col-md-6">
-        <p style="font-size:25px;">ADDRESS</p>
+        <p style="font-size:25px; margin-left:-6px;">ADDRESS</p>
         <div class="span1 mb-4"></div>
-        <p style="margin-top:-18px;">Lorem ipsum dolor sit amet,<br> consectetur <br>adipisicing elit. </p>
+        <p style="margin-top:-18px;">192 Pocket-3 Paschim Puri, Punjabi Bagh Club <br>Road, First Floor </p>
+        <p><i class="fa fa-envelope" style="font-size:20px;"> sanasharif76@gmail.com</i></p>
       </div>
     </div>
   </div>
@@ -399,5 +643,36 @@ btn.on('click', function(e) {
 
 
 </script>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
 </body>
 </html>
